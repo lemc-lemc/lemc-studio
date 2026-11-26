@@ -1,0 +1,22 @@
+{
+  "version_proyecto": 6,
+  "modo": "ascii",
+  "titulo": ["Volver", "al rumbo"],
+  "audio_local": "",
+  "segundos_por_verso": 3.05,
+  "escenas": [{"archivo": "escena_01.js", "versos": []}],
+  "animacion_ascii": {
+    "fuente": "Figura 3D",
+    "figura": "Brújula",
+    "paleta": "Oro antiguo",
+    "tema_codigo": "Papel",
+    "caracteres": "RUMBO",
+    "mensaje": "Cuando tengas dudas, vuelve a lo que te importa.",
+    "duracion": 12,
+    "vueltas": 0.72,
+    "particulas": true,
+    "detalles": true,
+    "codigo": true,
+    "sonido": "Ambiente"
+  }
+}

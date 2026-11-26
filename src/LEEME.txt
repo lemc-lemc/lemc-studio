@@ -1,0 +1,246 @@
+LEMC STUDIO 8.3.7
+
+PERSONAJE INDEPENDIENTE
+En ASCII, elige una imagen o un video de fondo y abre Personaje.
+Puedes añadir un PNG con transparencia o un APNG/WebP animado.
+Las marcas usan segundos, x, y, ancho relativo y giro en grados.
+Ejemplo 0,.22,.55,.28,-8; 4,.65,.40,.34,8
+El personaje se compone después del encuadre de cámara y antes
+de la conversión a ASCII. Si todos los elementos vienen pegados
+en una imagen plana, prepara el personaje como un recorte aparte.
+
+PLANOS DE CÁMARA
+En ASCII, abre Planos de cámara para montar una imagen o un video.
+Cada plano tiene intervalo, zoom, x e y iniciales, y zoom, x e y finales.
+Ejemplo 0-5,1,.5,.5,1.3,.6,.65; 5-10,1.2,.5,.4,1,.5,.5
+Las coordenadas van de 0 a 1. La cámara se anima dentro del plano
+y puede cortar al encuadre siguiente. El audio sigue en su lugar.
+
+MOVIMIENTO DE FONDO NAVIDEÑO
+El ejecutable acepta --mover-fondo montañas o --mover-fondo luna,
+seguidos de la ruta del MP4 fuente y de un MP4 de destino nuevo.
+Estos dos ajustes usan la composición de las fuentes de El expreso
+de Nochebuena y Navidad en las ventanas, respectivamente. Trabajan
+con sus 30 segundos y dejan el audio a cargo del proyecto ASCII.
+
+ESCENA NAVIDEÑA NOCTURNA
+Para una figura 3D de Árbol, activa Escena navideña nocturna en
+Efectos y formato. La escena incluye un cielo invernal a lienzo
+completo y un encuadre más amplio en Solo ASCII.
+
+TRAMOS CON VIDEO ORIGINAL
+En Montaje de video, escribe los intervalos de video original en
+segundos. Por ejemplo, 5-10; 18-24; 30- muestra el original en esos
+tres tramos y deja el resto en ASCII. El tercer tramo llega al final.
+El ajuste de fundido controla los cambios entre ambos estilos.
+Activa «Adaptar el color del panel a la escena» para teñir el marco,
+el fondo y el renglón activo del código con colores del video.
+
+VIDEO RÁPIDO
+Abre «Video rápido…» y elige un archivo de video local. El proyecto se
+prepara en ASCII con el audio de origen si está disponible, lienzo
+vertical 1080 × 1920 y 60 fps. Ajusta el encuadre y guarda como proyecto
+editable. La duración de los proyectos ASCII va de 2 a 120 segundos.
+
+En «Montaje de video» puedes girar la fuente, marcar el segundo del
+cambio al original y ajustar el fundido. Deja vacío el segundo para
+mantener ASCII durante todo el clip. El código puede permanecer sobre
+el video original. En «Animar y extender» puedes repetir la imagen
+del video a velocidad normal. «Montaje de video» permite repetir la
+pista completa y pedir una prueba adicional a 1440 × 2560.
+
+Para exportar desde Windows sin abrir el editor, usa el lanzador
+«Exportar con LEMC Studio.cmd» del proyecto o ejecuta LEMC Studio.exe
+con estos argumentos:
+  --exportar --video "fuente.mp4" --salida "entrega\Reel.mp4" --variantes dos
+Al usar el lanzador .cmd, omite --exportar. También se puede usar
+--proyecto "Reel.json" en lugar de --video. Opciones adicionales:
+--duracion 30 --cambio-original 10.2 --fundido 0.35 --repetir
+--giro auto|izquierda|derecha|180 --informe "informe.json"
+
+ANIMAR Y EXTENDER EN ASCII
+En ASCII, elige Imagen o Video en Composición y abre Animar y extender.
+Selecciona Ascenso, Acercamiento o Recorrido lateral y ajusta la intensidad.
+Una imagen dura todo el tramo. Para un video corto, activa Repetir el video.
+Puedes escribir la duración o tomarla del recorte elegido en Audio ASCII.
+En Ascenso, una imagen con fondo transparente se mueve por separado.
+Al activar el escape, el editor anima las llamas que reconozca en la
+imagen o coloca la estela según la forma de la base. Puedes indicar hasta
+cuatro salidas sobre el recorte, con x,y de 0 a 100. Ejemplo: 25,95;75,95.
+Una foto opaca o un video mueve su encuadre.
+Busca «ASCII · Animar y extender» en Ver demostraciones para ver el cohete.
+
+EXPORTAR VARIANTES
+En ASCII, al elegir una imagen o video, puedes pulsar «Exportar
+variantes» para guardar dos MP4 con el mismo nombre base. «Con código»
+muestra la composición habitual. La versión limpia omite la firma,
+el texto y el panel. Si se activa el cambio al original, ocurre en
+ambas variantes. Ambas usan el audio, los fps y la resolución del proyecto.
+
+EFECTOS Y FORMATOS INCORPORADOS
+En ASCII, Efectos y formato reúne nieve, luces LED, regalos, estrella,
+fondo de estadio, márgenes, nombre del panel, zooms y destellos marcados.
+En Letra y código se pueden activar las gerberas y la composición alta.
+La resolución 1080 × 2280 exporta en formato vertical 9:19.
+
+FIRMA Y ENCUADRE ASCII
+En Conversión de archivos, Firma superior sustituye el rótulo del modo.
+Recorte inferior conserva más de la parte baja de la fuente. Fundir los
+bordes del video suaviza el límite de los caracteres con el fondo.
+Velocidad del video afecta el movimiento visual. Usa un archivo de audio
+independiente para mantener su tempo al cambiar la velocidad.
+
+ACABADO ASCII PARA VIDEO
+En «Conversión de archivos», activa Detalle en sombras, Panel de código
+compacto y Partículas doradas. Activa también el panel Python en
+«Composición» para mostrar el código real de la conversión.
+
+PIXEL ART Y ASCII
+En ASCII, selecciona Imagen o Video y abre «Conversión de archivos».
+Elige el acabado ASCII o Pixel art y, si lo necesitas, activa Realzar contornos.
+En fotos, Paralaje suave simula desplazamiento por zonas. En video, el editor
+convierte el movimiento que ya contiene el archivo, fotograma a fotograma.
+
+DEMOSTRACIONES
+Pulsa «Ver demostraciones…» para probar las herramientas con escenas
+de muestra. Reproduce, mueve el cursor o alterna «Ver resultado».
+«Abrir herramienta» te lleva al control en tu proyecto.
+
+LETRA AUTOMÁTICA
+En Letra y código, abre «Letra automática…», elige el tramo y deja activada
+la sincronización por palabra. Revisa el texto y pulsa «Crear escenas
+automáticamente». El editor reparte hasta cuatro versos por escena.
+Las marcas son estimadas y se corrigen en «Tiempos por palabra…».
+
+LEMC STUDIO · CONTROLES NUEVOS
+
+En «Tiempos por palabra», detecta las entradas de la escena activa,
+escucha cada verso y corrige las marcas relativas a su inicio.
+«Guardar y ver con audio» genera una previsualización.
+En «Efectos, título y firma» puedes elegir o guardar plantillas.
+Apaga «Mostrar firma» para conservar el texto, tamaño y posición.
+
+LEMC STUDIO 8.0.0
+
+LÍNEA DE TIEMPO
+Revisa un instante del reel con la forma de onda y la guía móvil. Los subtítulos importados conservan su final durante las pausas. Puedes elegir el segundo de inicio del video de fondo.
+
+ABRIR EN WINDOWS
+Extrae el ZIP completo y abre «LEMC Studio.exe». Mantén la carpeta
+«_internal» junto al ejecutable. Python y las bibliotecas gráficas vienen
+incluidos. Conserva también «modelos» junto al ejecutable para transcribir sin
+internet. Para exportar MP4, usar clips de fondo y transcribir se usa FFmpeg.
+El paquete completo de Windows trae FFmpeg y ffprobe en «bin», y Whisper
+Small en «modelos». Conserva las dos carpetas junto al ejecutable.
+
+EXPORTACIÓN Y EFECTOS
+El panel «Exportación» muestra calidad, resolución y fps en ambos editores.
+«Máxima nitidez» es la opción inicial y conserva más detalle al comprimir.
+La exportación a 1080 × 1920 amplía el dibujo interno de 720 × 1280.
+La exportación final aplica enfoque suave y compresión de alta calidad.
+En Letra y código, «Fondo multimedia» permite activar lluvia, partículas
+y destellos reactivos, con sensibilidad Baja, Media o Alta. La lluvia
+también activa la animación escalonada de las palabras. Los proyectos con
+marcas por palabra precargadas las usan para sincronizar esa animación.
+La transcripción en la interfaz genera tiempos por verso.
+En ASCII, el panel muestra código Python del procesamiento real. Puedes
+elegir movimiento de imagen y cuándo empieza y se completa el mensaje.
+
+PESTAÑAS INDEPENDIENTES
+«Letra y código» y «ASCII» guardan configuraciones y pistas de audio propias
+en el mismo proyecto. La pestaña activa determina qué se exporta. Cambia de
+pestaña con Ctrl+1 y Ctrl+2. Guarda con Ctrl+S.
+
+BIBLIOTECA DE DISEÑOS
+Pulsa «Biblioteca de diseños…». Hay 18 figuras y 72 frases originales.
+Puedes filtrar por Amor, Esperanza, Constancia, Fortaleza, Tristeza, Calma,
+Gratitud o Inspiración. Prueba las 12 paletas de escena y los 7 temas de código
+independientes antes de aplicar. «Aplicar diseño y frase» pasa el motivo,
+colores y texto a la pestaña activa. En Letra se usa un espacio libre o se crea
+una escena nueva. En ASCII se elige la figura y la frase como mensaje final.
+Abre «Ejemplo Biblioteca.json» para ver una brújula con el tema de código Papel.
+
+ASCII
+1. En «Composición», elige Figura 3D, Imagen o Video. Para probar el árbol
+   3D, abre «Ejemplo ASCII.json». También hay estrella y corazón.
+   Para ver una conversión, abre «Ejemplo ASCII desde video.json».
+2. Para archivos, pulsa «Elegir archivo…». En «Conversión de archivos» puedes
+   encajar o recortar, conservar el color original o usar paleta o monocromo,
+   regular contraste y brillo, elegir la cantidad de columnas y cambiar la
+   rampa de caracteres. Puedes invertir la luminancia y repetir el video.
+   «Usar duración del video» toma el tiempo del archivo si FFprobe lo detecta.
+   Al desactivar el bucle, el último fotograma se mantiene hasta el final.
+3. En «Composición» también puedes cambiar el fondo, el mensaje, duración,
+   partículas, panel de código y, para figuras, el giro y adornos.
+4. En «Audio ASCII» elige Ambiente, Silencio, Archivo de audio o Audio del
+   video. Las pistas de archivo y de video admiten recorte.
+   «Mezcla y fundidos» ajusta niveles y permite añadir una segunda pista local.
+5. Arrastra el deslizador de la derecha para revisar momentos. «Reel con audio»
+   crea un borrador y «Exportar MP4» renderiza la animación completa.
+
+LETRA Y CÓDIGO
+1. En «Guion y escenas» puedes editar, duplicar y reordenar escenas. «Diseño y
+   código» reúne los fondos, figuras y temas de código por escena.
+2. En «Audio y transcripción» elige una pista local y pulsa «Transcribir…».
+   «Automático» elige el perfil con un análisis de nivel, estéreo y pausas.
+   «Comparar dos lecturas» contrasta dos transcripciones por cobertura y
+   repeticiones. Puedes fijar un idioma, otro perfil y el tramo de audio.
+3. En la revisión, selecciona una marca y pulsa «Escuchar verso». Puedes
+   modificar el segundo de entrada y pulsar «Ajustar entrada». Corrige la
+   transcripción o pega otra letra, con un verso por línea. «Crear escenas»
+   propone código y conserva los tiempos reconocidos
+   cuando coincide la cantidad de líneas. Si cambia, estima nuevos tiempos para
+   ese tramo. Puedes ajustar cada tiempo y el recorte en «Inicio…».
+4. «Pegar letra» acepta texto manual, SRT o LRC con marcas de tiempo. Separa
+   estrofas con una línea en blanco si pegas texto. «Sugerencias…» propone una
+   paleta, figura y ajustes de legibilidad. El código sugerido es editable.
+5. Elige acento, fondo y figura por escena. En «Imagen o video…» carga un
+   archivo local, elige movimiento y ajusta el velo del fondo. Un valor bajo
+   destaca el archivo. Un valor alto lo mezcla con el color de la escena.
+   Los clips se repiten si son más cortos que la escena y su audio se silencia.
+6. «Ver escena» reproduce solo la escena seleccionada. «Reel con audio» abre
+   todo el reel como borrador de 540 × 960. Al exportar, se genera un MP4 de
+   1080 × 1920. Los trabajos largos se pueden cancelar desde la barra inferior.
+
+La transcripción se ejecuta en la PC. La mezcla de canto, coros y música intensa
+puede causar errores en palabras y tiempos. Los perfiles filtran la mezcla y se
+pueden probar sobre el mismo fragmento. Revisa o reemplaza el resultado si hace falta.
+
+MEZCLA PERSONALIZADA
+Cada modo guarda sus ajustes de audio. Modifica la ganancia y los fundidos de
+la pista principal. Puedes añadir una pista secundaria, por ejemplo música
+bajo la voz, con su propio volumen, inicio en el reel y recorte del archivo.
+«Escuchar pista principal» prueba sus niveles. «Reel con audio» permite escuchar
+la mezcla completa sincronizada con el video.
+
+ACTUALIZAR Y CONSERVAR PROYECTOS
+Guarda los archivos JSON y sus imágenes, videos y pistas de audio en una carpeta
+de proyectos aparte. Si los archivos multimedia están junto al JSON, puedes
+mover la carpeta completa. Cuando recibas una versión nueva, extráela en otra
+carpeta y abre los proyectos JSON desde el programa nuevo. El formato guarda su
+versión para que futuras ediciones puedan migrar los proyectos antiguos.
+
+CÓDIGO FUENTE Y LINUX
+El ZIP de código fuente incluye las funciones de edición y exportación, los
+recursos y los scripts para reconstruir el programa. Para ejecutar en Linux
+prepara Python 3 con Tkinter, FFmpeg con libx264 y fuentes DejaVu o Liberation.
+Para la transcripción, FFmpeg necesita el filtro whisper. Copia la carpeta
+«modelos» del ZIP de Windows al lado de «editor.py» o elige el archivo .bin
+desde el diálogo de transcripción. Los detalles están en «Modelo Whisper.txt».
+Instala los paquetes de «requirements.txt» en el Python que vaya a usar el editor
+antes de trabajar sin conexión. Ejecuta «bash abrir-linux.sh» desde el código
+extraído. Para compilar un binario del sistema, instala «requirements-build.txt» y
+ejecuta «bash build-linux.sh». El resultado queda en «dist/editor-de-reels/».
+En Windows, con las dependencias de compilación instaladas, ejecuta el script
+«build_windows.ps1». Una vez preparadas las dependencias tampoco se necesita red
+para construir. Esta entrega incluye un ejecutable para Windows x64.
+
+
+
+Campo de práctica
+
+En ASCII → Mundos ASCII, elige Jugar · Campo de práctica.
+W o ↑ para avanzar, S o ↓ para frenar, A y D o ← y → para girar.
+Usa + y − para el zoom. Las teclas 1, 2 y 3 cambian la armadura.
+
+Pulsa V o Inspeccionar modelo para ver el caballo y el jinete de cerca. A / D desplaza la vista de inspección del perfil.

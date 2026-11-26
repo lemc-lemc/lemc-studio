@@ -1,0 +1,16 @@
+MODELO LOCAL PARA TRANSCRIBIR
+
+El paquete de Windows incluye ggml-small-q5_1.bin, un modelo multilingüe de
+Whisper en formato whisper.cpp, y la licencia MIT de Whisper en «modelos».
+
+Página del modelo: https://huggingface.co/ggerganov/whisper.cpp/blob/3e251d613ae82c33b1dcca9f0406c697c3f9d083/ggml-small-q5_1.bin
+SHA-256: ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb
+
+Coloca el archivo en «modelos» junto a editor.py o junto al ejecutable si haces
+tu propia compilación. También puedes seleccionarlo al pulsar «Elegir modelo…».
+El modelo se carga en tu PC. Su uso no requiere conexión ni una cuenta.
+También puedes elegir ggml-base-q5_1.bin de versiones anteriores. Small ocupa
+más espacio y necesita más tiempo de cómputo al transcribir.
+
+El comando «ffmpeg -h filter=whisper» debe mostrar las opciones del filtro.
+Documentación: https://ffmpeg.org/ffmpeg-filters.html#whisper

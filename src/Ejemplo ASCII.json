@@ -1,0 +1,32 @@
+{
+  "version_proyecto": 6,
+  "modo": "ascii",
+  "titulo": [
+    "Luces de",
+    "invierno"
+  ],
+  "audio_local": "",
+  "segundos_por_verso": 3.05,
+  "escenas": [
+    {
+      "archivo": "escena_01.js",
+      "versos": []
+    }
+  ],
+  "animacion_ascii": {
+    "figura": "Árbol",
+    "paleta": "Invierno",
+    "caracteres": "INVIERNO2026",
+    "mensaje": "LUCES DE INVIERNO",
+    "duracion": 20.0,
+    "vueltas": 0.75,
+    "particulas": true,
+    "detalles": true,
+    "codigo": true,
+    "led_navidad": true,
+    "nevada_intensa": true,
+    "regalos_extra": true,
+    "estrella_destellos": true,
+    "archivo_panel": "navidad.py"
+  }
+}

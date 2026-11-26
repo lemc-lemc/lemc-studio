@@ -1,0 +1,23 @@
+{
+  "version_proyecto": 6,
+  "modo": "ascii",
+  "titulo": ["Aurora", "en caracteres"],
+  "audio_local": "",
+  "segundos_por_verso": 3.05,
+  "escenas": [{"archivo": "escena_01.js", "versos": []}],
+  "animacion_ascii": {
+    "fuente": "Video",
+    "archivo": "Aurora - Fuente.mp4",
+    "duracion": 8,
+    "paleta": "Aurora",
+    "mensaje": "AURORA EN CARACTERES",
+    "columnas": 94,
+    "brillo": 0.14,
+    "contraste": 1.10,
+    "ajuste": "Encajar",
+    "modo_color": "Original",
+    "particulas": true,
+    "codigo": true,
+    "sonido": "Ambiente"
+  }
+}

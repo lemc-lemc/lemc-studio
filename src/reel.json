@@ -1,0 +1,35 @@
+{
+  "version_proyecto": 6,
+  "titulo": ["No se da", "ni cuenta"],
+  "segundos_por_verso": 3.05,
+  "audio_local": "",
+  "escenas": [
+    {
+      "archivo": "amor_callado.js",
+      "versos": [
+        ["if (laVeo) miroEnSilencio();", "No se da ni cuenta que cuando la miro"],
+        ["suspiro.guardar();", "Por no delatarme me guardo un suspiro"],
+        ["miAmor.encender();", "Que mi amor callado se enciende con verla"],
+        ["dariaTodo(porEstarConElla);", "Que diera la vida para poseerla"]
+      ]
+    },
+    {
+      "archivo": "lo_que_ella_no_ve.js",
+      "versos": [
+        ["misOjos.brillar();", "No se da ni cuenta que brillan mis ojos"],
+        ["temblar(); sonrojarme();", "Que tiemblo a su lado y hasta me sonrojo"],
+        ["miAmor.despertar(porElla);", "Que ella es el motivo que a mi amor despierta"],
+        ["ellaSeDaCuenta = false;", "Que ella es mi delirio y no se da cuenta"]
+      ]
+    },
+    {
+      "archivo": "fuera_de_alcance.js",
+      "versos": [
+        ["miValor = null;", "Esta cobardía de mi amor por ella"],
+        ["ella = new Estrella();", "Hace que le vea igual que a una estrella"],
+        ["distancia = Infinity;", "Tan lejos, tan lejos en la inmensidad"],
+        ["puedoAlcanzarla = false;", "Que no espero nunca poderla alcanzar"]
+      ]
+    }
+  ]
+}
